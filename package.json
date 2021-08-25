@@ -1,0 +1,24 @@
+{
+  "name": "bank-transaction-send",
+  "version": "1.0.0",
+  "description": "Send bank transactions to Xero",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^4.10.1",
+    "csv-parser": "^2.3.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2",
+    "querystring": "^0.2.0",
+    "xero-node": "^4.6.0"
+  }
+}
